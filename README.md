@@ -43,10 +43,10 @@ Disponível em: https://doi.org/10.14281/18241.17.
 │   ├── dataviz.R            # Funções de visualização e orquestrador de gráficos
 │   └── dashboard.R          # Aplicação Shiny (dashboard interativo)
 ├── data/                    # Diretório para o arquivo de dados (não versionado)
-├── outputs/
-│   ├── models/              # Modelos LightGBM salvos (.txt)
+├── outputs/                 # Diretório para resultados visuais dos modelos (não versionado)
+│   ├── models/              # Modelos LightGBM salvos (não versionado)
 │   ├── plots/               # Gráficos gerados pelo pipeline (não versionado)
-│   └── resultados_lgbm.rds
+│   └── resultados_lgbm.rds  # Desempenho dos modelos LightGBM (não versionado)
 └── README.md
 ```
 
