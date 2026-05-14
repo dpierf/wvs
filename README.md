@@ -18,6 +18,8 @@ A frente de DataViz cobre todas as 7 Waves (ondas) da pesquisa, enquanto a etapa
 machine learning prepara modelos para as waves 5 a 7 (2005–2022), permitindo comparações
 temporais sobre a relação entre dimensões culturais e pobreza subjetiva.
 
+O dashboard interativo deste produto pode ser visto em 🔗 [Dashboard WVS](https://huggingface.co/spaces/dpierf/wvs)
+
 ---
 
 ## Fonte de dados
