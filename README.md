@@ -74,20 +74,15 @@ shiny, bslib, plotly, labelled, shinyWidgets, here, dplyr, pROC
 
 --- 
 
-### Dashboard interativo
+## Dashboard interativo
 
-Após executar `main.R`, o dashboard é iniciado com:
-
-```r
-.envfun$dashboard_wvs(baseVIZ)
-```
-
-Ou diretamente, após carregar as funções:
+Após abarir `main.R`, e executar as seções 0. e 1. do arquivo, o dashboard pode ser iniciado com:
 
 ```r
-source('R/config.R')
-source('R/dashboard.R', local = TRUE)
-dashboard_wvs(baseVIZ)
+baseWVS <- funs$carregar_base(vars$PATH_DATA, wave_min = 1)  # Base original, completa
+baseVIZ <- funs$preparar_base(baseWVS)                       # Base enxuta para dashboard
+rm(baseWVS) ; gc() ; cat('\014')                             # Removendo original e limpando
+funs$dashboard_wvs(baseVIZ)                                  # Inicialização do dashboard
 ```
 
 ---
